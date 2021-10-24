@@ -1,0 +1,6 @@
+#!/bin/sh
+
+git clone https://github.com/shadowmax31/zsh_config.git ~/.config/zsh
+
+curl -L git.io/antigen > ~/.config/zsh/antigen.zsh
+ln -s ~/.config/zsh/.zshrc ~/.zshrc

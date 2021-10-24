@@ -1,0 +1,12 @@
+#!/bin/sh
+
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+
+#PS1='%D{%H:%M} %~ ${vcs_info_msg_0_}> '
+autoload -U colors && colors
+PS1='%D{%H:%M} %{$fg[blue]%}%n %{$fg[yellow]%}%~ %{$fg[green]%}${vcs_info_msg_0_}%{$reset_color%}> '
+
+zstyle ':vcs_info:git:*' formats '%b'

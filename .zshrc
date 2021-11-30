@@ -21,6 +21,7 @@ bindkey -v
 # ************ Custom Config ************
 #
 source ~/.config/zsh/prompt
+alias n="nvim ~/.notes"
 #
 # ************ ****** ****** ************
 

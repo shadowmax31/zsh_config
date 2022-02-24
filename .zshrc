@@ -1,7 +1,5 @@
 source ~/.config/zsh/antigen.zsh
 
-[ -f ~/.config/zsh/custom.zsh ] && source ~/.config/zsh/custom.zsh
-
 # The following lines were added by compinstall
 zstyle ':completion:*' completer _complete _ignored _approximate
 zstyle ':completion:*' list-colors ''
@@ -22,6 +20,9 @@ bindkey -v
 #
 source ~/.config/zsh/prompt
 alias n="nvim ~/.notes"
+export user_color="blue"
+
+[ -f ~/.config/zsh/custom.zsh ] && source ~/.config/zsh/custom.zsh
 #
 # ************ ****** ****** ************
 
